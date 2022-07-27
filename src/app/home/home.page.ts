@@ -8,16 +8,14 @@ import { BackgroundMode } from '@ionic-native/background-mode/ngx';
 })
 export class HomePage {
   constructor(public backgroundMode: BackgroundMode) {
-    let cnt = 0;
     setInterval(() => {
-      this.backgroundFunction(cnt);
-      cnt += 1;
+      this.backgroundFunction();
     }, 1000);
   }
 
-  public backgroundFunction(cnt: number) {
+  public backgroundFunction() {
     if (this.backgroundMode.isEnabled()) {
-      console.log('background mode enabled ' + cnt);
+      console.log('background mode enabled');
     }
   }
 }
