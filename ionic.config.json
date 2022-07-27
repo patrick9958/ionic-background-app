@@ -1,0 +1,7 @@
+{
+  "name": "ionic-background-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
